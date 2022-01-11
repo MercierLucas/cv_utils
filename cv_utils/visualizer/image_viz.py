@@ -2,6 +2,7 @@ import cv2
 from math import ceil
 import matplotlib.pyplot as plt
 
+
 def show_image(img, title='', to_rgb=False, size=None):
     if size:
         plt.figure(figsize=(size,size))
