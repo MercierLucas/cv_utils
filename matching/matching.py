@@ -6,6 +6,7 @@ from cv_utils.entities import Box
 from cv_utils.entities import Line
 from cv_utils.misc import Slider
 
+
 def _couple_exists(dict_, a, b):
     if a in dict_:
         if dict_[a] == b:

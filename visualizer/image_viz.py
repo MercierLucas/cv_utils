@@ -17,7 +17,7 @@ def show_image(img, title='', to_rgb=False, size=None):
     plt.show()
     
     
-def show_images(images, labels, rows='auto', cols='auto', max_cols=4, size=None):
+def show_images(images, labels, rows='auto', cols='auto', max_cols=4, size=None, axis=False):
     assert len(images) == len(labels), 'Must have same number of labels and images'
     
     if size:
@@ -29,6 +29,8 @@ def show_images(images, labels, rows='auto', cols='auto', max_cols=4, size=None)
         
     for i, (image, label) in enumerate(zip(images, labels)):
         plt.subplot(rows, cols, (i+1))
+        if not axis:
+            plt.axis('off')
         if len(image.shape) == 2:
             plt.imshow(image, cmap='gray')
         else:
