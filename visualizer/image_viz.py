@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def show_image(img, title='', to_rgb=False, size=None):
+    """Show a single image"""
     if size:
         plt.figure(figsize=(size,size))
     if to_rgb:
@@ -19,6 +20,8 @@ def show_image(img, title='', to_rgb=False, size=None):
     
     
 def show_images(images, labels, rows='auto', cols='auto', max_cols=4, size=None, axis=False):
+    """Show images side-by-side"""
+
     assert len(images) == len(labels), 'Must have same number of labels and images'
     
     if size:
@@ -37,4 +40,13 @@ def show_images(images, labels, rows='auto', cols='auto', max_cols=4, size=None,
         else:
             plt.imshow(image)
         plt.title(label)
+    plt.show()
+
+
+def show_gray_hist(gray):
+    """Show grayscale histgram for an image"""
+    plt.hist(gray.ravel(), 255, (0,255))
+    plt.xlabel('Echelle de gris')
+    plt.ylabel('Occurences')
+    plt.title('Grayscale histgram')
     plt.show()
