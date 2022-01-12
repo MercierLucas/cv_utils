@@ -83,8 +83,8 @@ class Compose:
     """
 
     def __init__(self, transforms:List[Transform]) -> None:
-        for t in transforms:
-            assert issubclass(type(t), Transform), 'If you use custom transform you still must inherit from Transform class'
+        #for t in transforms:
+        #    assert issubclass(type(t), Transform), 'If you use custom transform you still must inherit from Transform class'
 
         self.transforms = transforms
 
