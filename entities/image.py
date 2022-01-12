@@ -5,6 +5,8 @@ class Image:
     """Hold basic image transformation"""
     def __init__(self, path:str, name=''):
         self.image = cv2.imread(path)
+        if self.image is None:
+            print(f'Warning: can\'t load: {path}')
         self.format = 'BGR'
         self.attributes = {}
         if name == '':
@@ -19,15 +21,9 @@ class Image:
         return value
     
     
-    def _grayscale(self) -> np.ndarray:
-        gray = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
-        gray = cv2.GaussianBlur(gray, (15, 15), 1)
-        return gray
-    
-    
     @property
     def grayscale(self) -> np.ndarray:
-        return self._cached_attribute('grayscale', self._grayscale())
+        return self._cached_attribute('grayscale', cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY))
 
     
     @property
