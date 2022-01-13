@@ -71,10 +71,10 @@ class Compose:
     Chain multiple transforms.
 
     Example:
-        >>> transforms.Compose([
+        >>> result = transforms.Compose([
         >>>     transforms.GaussianBlur(10),
         >>>     transforms.Canny(),
-        >>> ])
+        >>> ])(img)
     
     
     (todo) Also contain pre defined common cv preprocessing like:
