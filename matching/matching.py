@@ -8,6 +8,7 @@ from cv_utils.misc import Slider
 
 
 def _couple_exists(dict_, a, b):
+    """Check if couple exists in a dict"""
     if a in dict_:
         if dict_[a] == b:
             return True
