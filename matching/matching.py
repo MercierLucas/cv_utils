@@ -32,6 +32,7 @@ def join_points(points, k=2):
         
 
 def get_humoments(img):
+    """Compute 7 Hu moments"""
     moments = cv2.moments(img)
     huMoments = cv2.HuMoments(moments)
     for i in range(0,7):
