@@ -17,6 +17,7 @@ def _couple_exists(dict_, a, b):
             return True
     return False
 
+
 def join_points(points, k=2):
     lines = []
     couples = {}
