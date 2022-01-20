@@ -1,6 +1,6 @@
 from typing import List
 import cv2
-from cv_utils.entities.image import Image
+from cv_utils.images import Image
 
 class TunerParameter:
     def __init__(self, name:str, default:int, max:int) -> None:

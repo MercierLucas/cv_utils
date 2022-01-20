@@ -2,8 +2,8 @@ import cv2
 import math
 import numpy as np
 from typing import List
-from cv_utils.entities import Box
-from cv_utils.entities import Line
+from cv_utils.shapes import Box
+from cv_utils.shapes import Line
 from cv_utils.misc import Slider
 
 
