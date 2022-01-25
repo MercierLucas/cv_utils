@@ -1,5 +1,5 @@
 import cv2
-from cv_utils.entities.point import Point
+from .point import Point
 
 class Circle(Point):
     def __init__(self, pos, radius, label=None) -> None:

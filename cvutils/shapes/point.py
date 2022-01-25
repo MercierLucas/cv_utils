@@ -1,8 +1,11 @@
 import cv2
-from cv_utils.entities.shape import Shape
+from .shape import Shape
 
 class Point(Shape):
     def __init__(self, pos, label=None) -> None:
+        """Args:
+            Pos: [x, y]
+        """
         super().__init__(label=label)
         self.x = int(pos[0])
         self.y = int(pos[1])

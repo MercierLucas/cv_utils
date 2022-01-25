@@ -2,9 +2,7 @@ from typing import List
 import cv2
 import numpy as np
 
-from cv_utils.entities.box import Box
-from cv_utils.entities.circle import Circle
-from cv_utils.entities.shape import Shape
+from cvutils.shapes import Shape
 
 COLORS = {
     'random': lambda : list(np.random.random(size=3) * 256),

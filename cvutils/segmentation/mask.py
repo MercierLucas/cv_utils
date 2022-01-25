@@ -1,7 +1,7 @@
 import cv2
 from typing import List
 
-from cv_utils.shapes import Box
+from cvutils.shapes import Box
 
 
 def add_mask_to_image(img, mask, x, y):

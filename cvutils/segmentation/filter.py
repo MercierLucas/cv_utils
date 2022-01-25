@@ -1,8 +1,8 @@
 from typing import List
 import numpy as np
 
-from cv_utils.shapes import Box
-from cv_utils.shapes import Circle
+from cvutils.shapes import Box
+from cvutils.shapes import Circle
 
 
 def filter_by_neighbours_in_radius(circles:List[Circle], n:int, radius:float, exact_amount=False) -> List[Circle]:

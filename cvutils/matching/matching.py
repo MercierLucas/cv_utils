@@ -2,9 +2,9 @@ import cv2
 import math
 import numpy as np
 from typing import List
-from cv_utils.shapes import Box
-from cv_utils.shapes import Line
-from cv_utils.misc import Slider
+from cvutils.shapes import Box
+from cvutils.shapes import Line
+from cvutils.misc import Slider
 
 
 def _couple_exists(dict_, a, b):

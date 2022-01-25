@@ -1,6 +1,3 @@
-
-
-
 class Shape:
     def __init__(self, label=None) -> None:
         self._label = label

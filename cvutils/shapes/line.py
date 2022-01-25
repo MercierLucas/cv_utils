@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
-from cv_utils.entities.point import Point
-from cv_utils.entities.shape import Shape
+from .point import Point
+from .shape import Shape
 
 
 class Line(Shape):

@@ -1,7 +1,7 @@
 import cv2
 import os
 
-from cv_utils.loaders import list_files_in_dir_recursive
+from cvutils.loaders import list_files_in_dir_recursive
 
 class ImageDataset:
 

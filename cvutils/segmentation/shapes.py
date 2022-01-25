@@ -1,8 +1,8 @@
 from typing import List
 import cv2
 import numpy as np
-from cv_utils.shapes import Box
-from cv_utils.shapes import Circle
+from cvutils.shapes import Box
+from cvutils.shapes import Circle
 
 def detect_circles(img, min_radius=3, max_radius=10) -> List[Circle]:
     contours = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)[-2]

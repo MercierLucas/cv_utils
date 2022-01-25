@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
-from cv_utils.entities.circle import Circle
-from cv_utils.entities.shape import Shape
+
+from .circle import Circle
+from .shape import Shape
 
 
 class Box(Shape):
