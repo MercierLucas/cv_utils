@@ -6,5 +6,11 @@ Wrapper for a bunch of common computer vision tasks. It contains different compo
 - Tunning
 
 
+## How to install
+Not yet available on pip lookup so for now just run
+```bash
+pip install -e .
+```
+
 ## Requirements
 - open-cv
